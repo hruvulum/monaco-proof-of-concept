@@ -12,6 +12,7 @@ export class Editor {
             fontFamily: "Helvetica",
             wordWrap: "wordWrapColumn",
             wordWrapColumn: 70,
+            wrappingIndent: "indent",
             disableMonospaceOptimizations: true,
             codeLens: false,
             cursorBlinking: "solid",
@@ -20,6 +21,8 @@ export class Editor {
             occurrencesHighlight: false,
             selectionHighlight: false,
             highlightActiveIndentGuide: false,
+            // I personally am not bothered by line numbers, but I have vague dreams of using Monaco as part of a generalized interface to information attractive to non-programmers.
+            lineNumbers: ((lineNumber: number) => "¶")
         });
         let safeTimeout: number;
         this.editor.onDidChangeModelContent(() => {

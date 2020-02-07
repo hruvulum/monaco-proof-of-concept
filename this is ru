@@ -4,7 +4,7 @@ this is ru. I made this to prove to myself that a suitably configured Monaco wou
 
 how to install the demo: copy ./ somewhere. cd into the copy. run 'yarn install', wait a long time. (there is currently an install at /repos in git bash on mbec.)
 
-how to run the demo. run 'yarn start', wait until it says 'compilation successful', visit http://localhost:8080/. if there is a blank page at that url, open Developer Tools (if using Chrome) and try to figure out what is wrong; at least read the text in the Console tab.
+how to run the demo. run 'yarn --offline start', wait until it says 'compilation successful', visit http://localhost:8080/. if there is a blank page at that url, open Developer Tools (if using Chrome) and try to figure out what is wrong; at least read the text in the Console tab.
 
 if you need to save space, you can delete the yarn.lock file. 'yarn install' will re-generate it, but will probably install newer versions of most of the packages, which might break something, but prol not.
 
